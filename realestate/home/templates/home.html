@@ -1,0 +1,96 @@
+
+{% extends 'base.html' %}
+{%load static%}
+
+{% block content %}
+<div class="hero-container">
+    <div class="hero-text-container">
+        <hr>
+        <p class="small-text">Best Estate Company</p>
+        <h1 class="hero-title">Let Us Get you Your 
+            new Home</h1>
+        <p class="hero-text">Here we will help you find your new home that you can
+            be proud of. With our contacts all over we will find a place
+            right on time</p>
+    </div>
+    <div class="hero-image">
+        <img src="{% static 'images/hero.jpg' %}" alt="house">
+    </div>
+</div>
+
+<section class="section1">
+    <div class="container">
+        <div class="grey-box"></div>
+        <div class="big-image"> <img src="{% static 'images/section1-b.jpg'%}" alt="luxury home"></div>
+        <div class="small-image"> <img src="{% static 'images/section1-s.jpg'%}" alt="wooden lucury home"></div>
+        <div class="section1-text">
+            <h2 class="section-title">Top Real Estate services</h2>
+            <p class="section-p">Our homes are build by the best architecturres
+                Sculpted by the best builders
+                and is sure to please all your needs</p>
+        </div>
+    </div>
+</section>
+
+<section class="section2">
+    <img src="{% static 'images/section2.jpg' %}" alt="" class="section2-image">
+    <div class="section2-text">
+        <p class="side-text">Sleek</p>
+        <p class="side-text">Stable</p>
+        <p class="side-text">and Reliable</p>
+    </div>
+</section>
+
+<section class="section3">
+    <div class="grid">
+        <div class="img-1">
+            <div class="grid-text">
+                <h1 class="section-title">Durable Structures</h2>
+                <p class="section-p">we have designed and constructed over 900 projects
+                    from coast to coast, and have preformed extensive 
+                    retrofitting of existing structures
+                </p>
+            </div>
+            <img src="{% static 'images/grid-1.jpg'%}" alt="">
+        </div>
+        <div class="img-2">
+            <img src="{% static 'images/grid-2.jpg'%}" alt="">
+        </div>
+        <div class="img-3">
+            <img src="{% static 'images/grid-3.jpg'%}" alt="">
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section4">
+    <div class="flex">
+        <div class="image-container ">
+            <img src="{% static 'images/section4-b.jpg'%}" alt="" class="section4-imageb">
+        </div>
+        <div class="image-container ">
+            <div class="text-container">
+                <h2 class="section-title">About us</h2>
+                <p class="section-p">our team is reliable and will be 
+                    there to help you at all times.
+                    we are here to provide you with the 
+                    best service</p>
+            </div>
+            <img src="{% static 'images/section4-s.jpg'%}" alt="" >
+        </div>
+    </div>
+</section>
+
+<footer class= "footer">
+
+</footer>
+
+
+
+
+
+
+
+{% endblock %}
+
