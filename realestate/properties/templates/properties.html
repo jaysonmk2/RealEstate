@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{%load static%}
+
+{% block content %}
+
+    {% for home in homes %}
+        <h1>{{home.house_name}} </h1>
+        <img src="{{home.house_image.url}}" alt="{{home.house_name}}">
+    {% endfor %}
+    
+    
+
+{% endblock  %}
