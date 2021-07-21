@@ -1,0 +1,123 @@
+
+
+
+.square{
+    position: absolute;
+    height : 800px;
+    width: 800px;
+    border: 10px solid black;
+    opacity: 10%;
+    transform: rotate(45deg);
+    top: 50%;
+    z-index: -1;
+    left: -10%;
+}
+
+
+
+
+
+hr{
+    margin: 0;
+}
+.main-propertie-content{
+    display: relative;
+    
+    flex-direction: row;
+}
+
+.content-side{
+    width: 75%;
+}
+
+.image-side{
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    top:0;
+    right: 0;
+    
+    
+}
+
+.side-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page-title{
+    position: relative;
+    z-index: 10;
+}
+
+.properties-headline{
+    width: 30%;
+    margin-left: 50vw;
+    margin-top: 5rem;
+    padding: 2rem 0;
+    background-color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.headline{
+    width: 60vw;
+    position: absolute;
+    left:5%;
+    margin-top: 0.5rem;
+}
+
+.content-grid{
+    padding: 2rem 4rem;;
+    
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.propertie-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.BegLine{
+    position: absolute;
+    top:15%;
+    left: 0;
+    width: 2%;
+    height: 30%;
+}
+
+.propertie-text-container{
+    position: relative;
+    padding: 1rem 2rem;
+}
+.propertie-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.propertie-name{
+    font-size: 2.4rem;
+    padding-top: 1rem;
+}
+.propertie-location{
+    font-size: 1rem;
+}
+
+.propertie-price{
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+span{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+

@@ -8,16 +8,19 @@
 
 
     <link rel="stylesheet" type="text/css" href="{% static 'home/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'properties/properties.css'%}">
     <title>Real estate company</title>
 </head>
 <body>
     <div class="body">
         <div class="nav">
-            <div class="asset">
-                <div class="hover">
+            <a href="{%url 'properties:propertiesView'%}">
+                <div class="asset">
+                    <div class="hover">
+                    </div>
+                    <div class="inner-hover"></div>
                 </div>
-                <div class="inner-hover"></div>
-            </div>
+            </a>
             <div class="asset">
                 <div class="hover">
                 </div>
