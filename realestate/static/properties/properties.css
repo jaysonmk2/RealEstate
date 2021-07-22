@@ -5,15 +5,90 @@
     position: absolute;
     height : 800px;
     width: 800px;
-    border: 10px solid black;
+    border: 10px solid rgb(85, 85, 85);
     opacity: 10%;
     transform: rotate(45deg);
     top: 50%;
     z-index: -1;
     left: -10%;
+    
 }
 
 
+@keyframes example {
+    0%   {transform: rotate(0deg);
+    border: 3px solid white}
+    100% {transform: rotate(360deg);
+    
+    border: 3px solid white}
+  }
+
+.asset{
+    position: relative;
+    cursor: pointer;
+   
+}
+
+.asset:hover .inner-hover{
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.hover{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    margin: 2rem;
+}
+
+
+.inner-hover{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 3px solid gray;
+    transform: rotate(45deg);
+    bottom: 25%;
+    left: 10%;
+}
+
+@media (min-width:1000px){
+    @keyframes example {
+        0%   {transform: rotate(0deg);
+        border: 5px solid rgb(224, 224, 224)}
+        100% {transform: rotate(360deg);
+        
+        border: 5px solid rgb(219, 219, 219)}
+      }
+
+
+    .asset{
+        position: relative;
+        cursor: pointer;
+       
+    }
+    
+    .hover{
+        width: 70px;
+        height: 70px;
+        background-color: rgb(255, 255, 255);
+        transform: rotate(45deg);
+        margin: 4rem;
+    }
+    
+    
+    .inner-hover{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border: 5px solid rgb(0, 0, 0);
+        transform: rotate(45deg);
+        bottom: 25%;
+        left: 10%;
+    }
+}
 
 
 
@@ -53,8 +128,8 @@ hr{
 }
 
 .properties-headline{
-    width: 30%;
-    margin-left: 50vw;
+    width: 30rem;
+    margin-left: 55vw;
     margin-top: 5rem;
     padding: 2rem 0;
     background-color: white;
@@ -70,15 +145,26 @@ hr{
 }
 
 .content-grid{
-    padding: 2rem 4rem;;
+    padding: 2rem 4rem;
     
     display:grid;
     grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
 .propertie-card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
+    max-width: 400px;
+}
+
+.propertie-card:hover{
+    box-shadow: 0 4px 8px 0 rgb(143, 143, 143), 0 6px 20px 0 rgb(151, 151, 151);
+}
+
+.propertie-card:hover .BegLine{
+    height: 60%;
 }
 
 .BegLine{
@@ -87,6 +173,10 @@ hr{
     left: 0;
     width: 2%;
     height: 30%;
+    transition: 0.5s;
+}
+.propertie-image{
+    height: 300px;
 }
 
 .propertie-text-container{
@@ -118,6 +208,97 @@ hr{
 span{
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+
+@media (max-width: 900px){
+
+    .image-side{
+        display: none;
+    }
+    .square{
+        height: 300px;
+        width: 300px;
+    }
+
+    .properties-headline{
+        width: 30rem;
+        margin-left: 35vw;
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .headline{
+        width: 80vw;
+        position: absolute;
+        left:0%;
+        margin-top: 0.5rem;
+    }
+
+    .propertie-price{
+        font-size: 2rem;
+    }
+    .content-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .hover{
+        background-color: rgb(0, 0, 0);
+    }
+    .inner-hover{
+        bottom: 25%;
+        left: 0%;
+    }
+    .content-side{
+        width: 100%;
+    }
+    .propertie-image{
+        height: 200px;
+    }
+    .propertie-name{
+        font-size: 1.8rem;
+    }
+    .propertie-price{
+        margin-block: 1rem;
+    }
+
+}
+
+
+@media (max-width: 650px){
+    .content-grid{
+        grid-template-columns: repeat(1,1fr);
+        padding: 2rem 2rem;
+    }
+    .properties-headline{
+        width: 25rem;
+        margin-left: 0;
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 1390px) and (min-width: 900px) {
+    .content-grid{
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 2rem;
+    }
+   
+   
+   
+    .propertie-price{
+        font-size: 2rem;
+    }
+    .content-side{
+        width: 85%;
+        
+    }
+    
+    .image-side{
+        width: 15%;
+        
+        
+        
+    }
 }
 
 
