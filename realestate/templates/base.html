@@ -17,15 +17,19 @@
             <a href="{%url 'properties:propertiesView'%}">
                 <div class="asset">
                     <div class="hover">
+                        <img src="{%static 'FixedImages/basefiles/houses.png'%}" alt="" class="icon-base">
                     </div>
                     <div class="inner-hover"></div>
                 </div>
             </a>
-            <div class="asset">
-                <div class="hover">
+            <a href="{%url 'home:home'%}">
+                <div class="asset">
+                    <div class="hover">
+                    <img src="{%static 'FixedImages/basefiles/home.png'%}" alt="" class="icon-base">
+                    </div>
+                    <div class="inner-hover"></div>
                 </div>
-                <div class="inner-hover"></div>
-            </div>
+            </a>
         </div>
         {% block content %}{% endblock  %}
     </div>

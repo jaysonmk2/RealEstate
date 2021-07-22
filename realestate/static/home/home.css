@@ -40,6 +40,8 @@ img{
 }
 
 
+
+
 @keyframes example {
     0%   {transform: rotate(0deg);
     border: 3px solid white}
@@ -435,4 +437,10 @@ section{
     .hero-title{
         font-size: 4rem;
     }
+}
+.icon-base{
+    width: 60px;
+    height: 60px;
+    
+    
 }

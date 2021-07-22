@@ -1,0 +1,103 @@
+
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'properties/details.css' %}">
+</head>
+<body>
+    <div class="nav-top">
+        <a href="{%url 'properties:propertiesView'%}"><img class="icon-size" src="{%static 'FixedImages/DetailsPage/arrow.png'%}" alt=""></a>
+    </div>
+    
+    <div class="hero-detail">
+        <div class="propertie-detail-text">
+            <h1 class="detail-title">{{home.house_name}}</h1>
+            <div class="grid-detail">
+                <div class="bedroom">
+                    <div class="top">
+                        <p class="number">{{home.bedroom_amount}}</p>
+                        <img src="{%static 'FixedImages/DetailsPage/bed.png'%}" alt="" class="icon">
+                    </div>
+                    <p class="bottom-text">Bedrooms</p>
+                </div>
+
+                <div class="bathroom">
+                    <div class="top">
+                        <p class="number">{{home.bathroom_amount}}</p>
+                        <img src="{%static 'FixedImages/DetailsPage/shower.png'%}" alt="" class="icon">
+                    </div>
+                    <p class="bottom-text">Bathrooms</p>
+                </div>
+
+                <div class="levels">
+                    <div class="top">
+                        <p class="number">{{home.house_floor}}</p>
+                        <img src="{%static 'FixedImages/DetailsPage/level.png'%}" alt="" class="icon">
+                    </div>
+                    <p class="bottom-text">Levels</p>
+                </div>
+
+                <div class="garage">
+                    <div class="top">
+                        <p class="number">{{home.garage_amount}}</p>
+                        <img src="{%static 'FixedImages/DetailsPage/garage.png'%}" alt="" class="icon">
+                    </div>
+                    <p class="bottom-text">Garage</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-image">
+            <img src="{{home.house_image.url}}" alt="" class="detail-hero-image">
+        </div>
+    </div>
+
+    <div class="detail-section">
+        <div class="text-flex">
+            <div class="first-flex">
+                <p class="start">Starting at</p>
+                <p class="detail-price">${{home.price}}</p>
+                <p class="detail-sqr">{{home.square_feet}} sq ft</p>
+            </div>
+
+            <div class="middle-flex">
+                <p class="detail-description">{{home.description}}</p>
+            </div>
+
+            <div class="last-flex">
+                <h2 class="flex-detail-title">{{home.house_name}}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-detail-container">
+        <div class="image-detail-bottom-container">
+            <img class="image-size" src="{{home.secondary_image.url}}" alt="inner house">
+        </div>
+
+        <div class="bottom-detail-text">
+            <h2 class="bottom-title">Contact</h2>
+            <div class="contact">
+                <img src="{%static 'FixedImages/DetailsPage/email.png'%}" alt="" class="contact-image">
+                <p class="contact-text">Example@gmail.com</p>
+            </div>
+            <div class="contact">
+                <img src="{%static 'FixedImages/DetailsPage/phone.png'%}" alt="" class="contact-image">
+                <p class="contact-text">#090900909</p>
+            </div>
+        </div>
+    </div>
+    <footer class= "footer">
+
+    </footer>
+
+</body>
+</html>
+
+
+

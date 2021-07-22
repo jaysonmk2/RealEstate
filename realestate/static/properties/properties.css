@@ -1,5 +1,9 @@
 
+.link-card{
+    text-decoration: none;
+    color: black;
 
+}
 
 .square{
     position: absolute;
